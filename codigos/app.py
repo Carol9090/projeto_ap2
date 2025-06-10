@@ -26,7 +26,7 @@ st.title('Dashboard de Análise de Dados de Produtos AliExpress')
 
 # --- Carregamento dos Dados (feito uma vez no início) ---
 try:
-    df = pd.read_csv('../bases_tratadas/dados_tratados.csv', sep=';')
+    df = pd.read_csv('bases_tratadas/dados_tratados.csv', sep=';')
 except FileNotFoundError:
     st.error("Erro: O arquivo 'dados_tratados.csv' não foi encontrado. Por favor, verifique o caminho.")
     st.stop()
